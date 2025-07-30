@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vijay | Portfolio</title>
+  <link href="C:\Users\vijay\Desktop\practice_code\vijay-portfolio\vijay.jpg" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f4;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .hero img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    h1, h2 {
+      margin: 20px 0 10px;
+      font-weight: 700;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    .projects, .skills, .contact {
+      margin-top: 40px;
+    }
+    .project-card {
+      background: #fff;
+      padding: 20px;
+      margin: 10px 0;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    ul.skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    ul.skills-list li {
+      background: #ddd;
+      padding: 10px 15px;
+      margin: 8px;
+      border-radius: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      background: #222;
+      color: #fff;
+      margin-top: 40px;
+    }
+    a.btn {
+      background: #222;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    a.btn:hover {
+      background: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Vijay</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="vijay.jpg" alt="Vijay's Photo" />
+    <h2>Hello! I'm Vijay</h2>
+    <p>Student | Aspiring AI Engineer | ML & Full-Stack Developer</p>
+    <a href="#contact" class="btn">Let's Connect</a>
+  </section>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>I am a final-year B.Tech CST student passionate about AI, Machine Learning, and Full-Stack Web Development. I enjoy building real-world projects that solve problems and make a meaningful impact.</p>
+  </section>
+
+  <section id="projects" class="container projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Dog Breed Predictor</h3>
+      <p>A deep learning web app that predicts dog breeds from uploaded images using a CNN model and TensorFlow.</p>
+    </div>
+    <div class="project-card">
+      <h3>DistilBERT Sentiment Analyzer</h3>
+      <p>Streamlit-based NLP app that analyzes customer reviews using Hugging Face's DistilBERT model and classifies them into positive/negative sentiments.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="container skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>TensorFlow</li>
+      <li>Streamlit</li>
+      <li>Power BI</li>
+      <li>HTML & CSS</li>
+      <li>MySQL</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="container contact">
+    <h2>Contact</h2>
+    <p>If you'd like to get in touch, feel free to email me or connect on LinkedIn.</p>
+    <p>Email: <a href="mailto:vijaykummari71@gmail.com">vijaykummari71@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/vijaykummari71/" target="_blank">vijaykummari71</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Vijay. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
